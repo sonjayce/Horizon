@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon - AI 驱动的信息聚合系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .hero a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .card h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .card ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .status {
+            background: #f0f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .status h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px 5px 5px 0;
+        }
+
+        .badge.success {
+            background: #10b981;
+        }
+
+        .badge.warning {
+            background: #f59e0b;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+
+        .cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🌅 Horizon</h1>
+        <p><strong>你只需享受新闻，剩下交给 Horizon。</strong></p>
+        <p>AI 驱动的信息聚合系统 | AI-Driven Information Aggregation System</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="status">
+                <h3>✅ 网站状态</h3>
+                <p><span class="badge success">✅ GitHub Pages 已部署</span></p>
+                <p>如果看到这个页面，说明 GitHub Pages 配置成功！</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span class="emoji">📡</span> 功能特性</h2>
+            <ul>
+                <li><strong>🤖 AI 智能打分</strong> — 使用 Claude、GPT、DeepSeek 等模型为内容评分 0-10</li>
+                <li><span class="emoji">📰</span><strong>多源聚合</strong> — Hacker News、Reddit、RSS、GitHub、Telegram、Twitter</li>
+                <li><span class="emoji">🔗</span><strong>新闻去重</strong> — 自动合并来自不同平台的相同新闻</li>
+                <li><span class="emoji">🔍</span><strong>背景补充</strong> — 为陌生概念补充背景解释</li>
+                <li><span class="emoji">💬</span><strong>社区声音</strong> — 收集并总结 HN、Reddit 评论</li>
+                <li><span class="emoji">🌐</span><strong>双语生成</strong> — 自动生成中英双语日报</li>
+                <li><span class="emoji">📧</span><strong>邮件推送</strong> — 自动发送日报给订阅者</li>
+                <li><span class="emoji">🌐</span><strong>GitHub Pages</strong> — 自动发布静态站点</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="emoji">⚡</span> 快速开始</h2>
+            <h3>1. 配置信息源</h3>
+            <p>编辑 <code>data/config.json</code> 添加你感兴趣的信息源</p>
+
+            <h3>2. 本地运行</h3>
+            <p><code>uv run horizon --languages zh</code></p>
+
+            <h3>3. 自动部署</h3>
+            <p>GitHub Actions 每天自动运行并更新本页面</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="emoji">📧</span> 邮件订阅</h2>
+            <p>发件人: <code>3304408721@qq.com</code></p>
+            <p>订阅方式: 发送邮件到此地址，主题包含 <code>SUBSCRIBE</code></p>
+            <p>退订方式: 发送邮件，主题包含 <code>UNSUBSCRIBE</code></p>
+        </div>
+
+        <div class="card">
+            <h2><span class="emoji">📊</span> 每日统计</h2>
+            <p>
+                <span class="badge">🤖 AI 打分</span>
+                <span class="badge">📰 多源聚合</span>
+                <span class="badge">🔗 自动去重</span>
+                <span class="badge">🌐 双语生成</span>
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>下次自动更新:</strong> 每天 UTC 23:00 (北京时间 07:00)
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="https://github.com/sonjayce/Horizon" class="cta">⭐ GitHub 仓库</a>
+            <a href="https://github.com/Thysrael/Horizon" class="cta">📖 原项目</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="https://github.com/sonjayce/Horizon">GitHub</a> |
+            <a href="mailto:3304408721@qq.com">联系我们</a>
+        </p>
+        <p>Powered by <a href="https://github.com/Thysrael/Horizon">Horizon</a></p>
+        <p><small>© 2025 Horizon Daily. All rights reserved.</small></p>
+    </div>
+
+    <script>
+        // 动态显示今天的日期
+        const today = new Date().toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'long'
+        });
+        console.log('Horizon 页面加载成功:', today);
+    </script>
+</body>
+</html>
