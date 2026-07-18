@@ -5,14 +5,16 @@ on:
 
 permissions:
   contents: write
-  id-token: write  # 添加这行：允许获取 OIDC token
+  id-token: write
+  pages: write  # 添加这行：允许部署到 GitHub Pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      id-token: write  # 添加这行：允许获取 OIDC token
+      id-token: write
+      pages: write  # 添加这行：允许部署到 GitHub Pages
 
     steps:
       - name: Checkout code
