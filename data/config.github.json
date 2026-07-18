@@ -111,16 +111,14 @@
     "time_window_hours": 24
   },
   "webhook": {
-    "enabled": true,
+    "enabled": false,
     "url_env": "HORIZON_WEBHOOK_URL",
-    "delivery": "summary_and_items",
-    "overview_position": "last",
-    "platform": "feishu",
-    "layout": "collapsible",
+    "delivery": "summary",
+    "overview_position": "first",
+    "platform": "generic",
+    "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": [
-      "zh"
-    ],
+    "languages": null,
     "request_body": {
       "msg_type": "interactive",
       "card": {
@@ -139,6 +137,13 @@
           "elements": [
             {
               "tag": "markdown",
+              "content": "Horizon生成结果: #{result}\nHorizon日报重要资讯数量: #{important_items}/#{all_items}"
+            },
+            {
+              "tag": "hr"
+            },
+            {
+              "tag": "markdown",
               "content": "#{summary}"
             }
           ]
@@ -146,5 +151,19 @@
       }
     },
     "headers": ""
+  },
+  "email": {
+    "enabled": true,
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "smtp_username": null,
+    "imap_enabled": true,
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "email_address": "3304407893@qq.com",
+    "password_env": "EMAIL_PASSWORD",
+    "sender_name": "Horizon Daily",
+    "subscribe_keyword": "SUBSCRIBE",
+    "unsubscribe_keyword": "UNSUBSCRIBE"
   }
 }
