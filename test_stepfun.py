@@ -18,7 +18,7 @@ def test_stepfun():
     """测试 StepFun API"""
 
     api_key = os.getenv("STEPFUN_API_KEY")
-    base_url = "https://api.stepfun.com/step_plan/v1"
+    base_url = "https://api.stepfun.com/v1"  # 标准 OpenAI 兼容地址
 
     print("=" * 60)
     print("  StepFun API 测试")
