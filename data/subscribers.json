@@ -1,0 +1,9 @@
+{
+  "_comment": "Horizon 邮件订阅者列表",
+  "_instructions": "在此添加订阅者邮箱，每行一个邮箱地址",
+  "subscribers": [
+    "3489073251@qq.com"
+  ],
+  "created_at": "2025-07-18",
+  "notes": "只有在此列表中的邮箱才会收到 Horizon 日报"
+}
