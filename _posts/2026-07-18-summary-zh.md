@@ -5,257 +5,105 @@ date: 2026-07-18
 lang: zh
 ---
 
-> 从 35 条内容中筛选出 12 条重要资讯。
+> 从 37 条内容中筛选出 14 条重要资讯。
 
 ---
 
-1. [香港宏福苑大火报告揭露承包商违规与监管全面失效](#item-1) ⭐️ 10.0/10
-2. [GPT-5.6 通过提示解决凸优化领域 30 年悬而未决的猜想](#item-2) ⭐️ 9.0/10
-3. [LG 显示器通过 Windows Update 静默安装软件引发隐私担忧](#item-3) ⭐️ 9.0/10
-4. [Anthropic 将 Claude Fable 5 永久纳入订阅计划](#item-4) ⭐️ 9.0/10
-5. [Stack Overflow 衰退图表](#item-5) ⭐️ 8.0/10
-6. [TP-Link Kasa 摄像头通过未认证 UDP 泄露 GPS 信息长达 6 年](#item-6) ⭐️ 8.0/10
-7. [Prism 编译漏洞泄露用户论文，引发隐私担忧](#item-7) ⭐️ 8.0/10
-8. [SpaceX 与五角大楼谈判数十亿美元 AI 算力协议](#item-8) ⭐️ 8.0/10
-9. [Kimi K3 登顶 DeepSWE 第三，首个开源权重前沿模型](#item-9) ⭐️ 8.0/10
-10. [OpenRouter 被传收购，估值超过 13 亿美元](#item-10) ⭐️ 8.0/10
-11. [台积电 A14 制程进展超预期，良率性能逼近 90%](#item-11) ⭐️ 8.0/10
-12. [特朗普政府考虑设立 FINRA 式 AI 安全监管机构](#item-12) ⭐️ 8.0/10
+1. [GPT-5.6 填补凸优化领域 30 年空白](#item-1) ⭐️ 9.0/10
+2. [LG 显示器通过 Windows Update 静默安装软件，未经用户同意](#item-2) ⭐️ 9.0/10
+3. [中国 Kimi K3 模型通过蒸馏对标前沿模型](#item-3) ⭐️ 9.0/10
+4. [美国拟设类似 FINRA 的 AI 监管机构](#item-4) ⭐️ 9.0/10
+5. [Fable 5 对阵 GPT-5.6 Sol：NP 难问题上的/goal 指令效果评估](#item-5) ⭐️ 8.0/10
+6. [Stack Overflow 衰落：AI 影响与社区壁垒](#item-6) ⭐️ 8.0/10
+7. [PHK 发表告别文，反思自行车棚效应](#item-7) ⭐️ 8.0/10
+8. [Anthropic 将 Claude Fable 5 永久纳入订阅计划](#item-8) ⭐️ 8.0/10
+9. [指控：DeepMind/Kaggle 大奖颁给无意义的 AI 提交](#item-9) ⭐️ 8.0/10
+10. [Meta 计划向 Anthropic 出租 AI 算力，潜在交易达百亿美元](#item-10) ⭐️ 8.0/10
+11. [SpaceX 与五角大楼谈判 AI 算力交易](#item-11) ⭐️ 8.0/10
+12. [OpenRouter 被传收购，估值超 13 亿美元](#item-12) ⭐️ 8.0/10
+13. [台积电 A14 制程良率性能接近 90%，进度超前](#item-13) ⭐️ 8.0/10
+14. [B 站展示开源 AI 伙伴 Project N.E.K.O.](#item-14) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [香港宏福苑大火报告揭露承包商违规与监管全面失效](https://china.caixin.com/2026-07-17/102465415.html) ⭐️ 10.0/10
+## [GPT-5.6 填补凸优化领域 30 年空白](https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/) ⭐️ 9.0/10
 
-一份关于 2025 年香港宏福苑大火（造成 168 人死亡）的 627 页调查报告显示，承包商蓄意使用非阻燃材料并提交伪造的防火证书，同时多个政府部门监管失职。 这份报告揭露了香港建筑与监管体系的系统性失败，凸显过度依赖行业自我规管和执法不力的致命后果，可能推动建筑安全与政府问责方面的重大政策改革。 承包商使用了非阻燃安全网和发泡胶板，火势通过天井垂直蔓延形成“火柱”。消防水箱被排空，主电掣被关闭，导致多数楼宇的警报和消防系统失效。
+大型语言模型 GPT-5.6 通过单一提示词被用于证明凸优化中一个存在 30 年的未解决问题，建立了在球形域上最小化凸 Lipschitz 函数的时间复杂度上界。 这一突破表明人工智能能够解决长期存在的数学问题，可能加速研究进程，并改变数学家的工作方向，使其更专注于创新性方法。 根据社区讨论，该成果使用的是 GPT-5.6 的“Sol Pro”变体，而非更高级的“Ultra”版本，且该问题虽比最近的 CDC 证明更为小众，但仍是一项实实在在的贡献。
 
-telegram · zaihuapd · 7月18日 10:01
+hackernews · mbustamanter · 7月18日 13:00 · [社区讨论](https://news.ycombinator.com/item?id=48957779)
 
-**背景**: 2025 年 11 月 26 日，香港大埔宏福苑维修工程期间突发大火，焚烧 43 小时，造成 168 人遇难。独立调查发现，外墙翻新使用的临时物料不具备阻燃性，而政府依赖文件审查而非现场核查，导致违规行为未被发现。
+**背景**: 凸优化是数学优化的一个子领域，研究在凸集上最小化凸函数，广泛应用于工程和机器学习。所指的 30 年空白是一个关于最小化凸 Lipschitz 函数最优时间复杂度的未解决问题，此前仅知道下界。球形域的限制并不严格，因为任何有界域都可以通过变量变换得到。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.scmp.com/infographics/hong-kong/article/3358875/tai-po-fire-hearing-part-4-reasons-behind-heavy-toll">What made Hong Kong’s Tai Po fire so deadly?</a></li>
-<li><a href="https://www.wkdq-electric.com/news/advantages-of-flame-retardant-pa66-material-and-disadvantages-of-non-flame-retardant-pa66-material-for-terminal-block-221239.html">Advantages of flame retardant PA66 material and disadvantages of...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Convex_optimization">Convex optimization - Wikipedia</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48957779">GPT-5.6 used a prompt to close a 30-year gap in convex optimization | Hacker News</a></li>
 
 </ul>
 </details>
 
-**标签**: `#fire safety`, `#regulatory failure`, `#construction`, `#Hong Kong`, `#public safety`
+**社区讨论**: 评论指出，虽然解决的问题较为冷门，但代表了真正的进步。关于此类 AI 证明是否会使研究人员过时，或者是否会促使研究转向更高层次问题，存在争论。一些用户注意到所使用的模型变体（Sol Pro 与 Ultra），并讨论了其对数学研究和软件开发的启示。
+
+**标签**: `#AI`, `#convex optimization`, `#mathematics`, `#breakthrough`
 
 ---
 
 <a id="item-2"></a>
-## [GPT-5.6 通过提示解决凸优化领域 30 年悬而未决的猜想](https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/) ⭐️ 9.0/10
+## [LG 显示器通过 Windows Update 静默安装软件，未经用户同意](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent) ⭐️ 9.0/10
 
-GPT-5.6 通过一个简单的提示词成功解决了一个在凸优化领域悬而未决 30 年之久的猜想。 这表明大型语言模型能够为高级数学研究做出重大贡献，可能加速优化理论及相关领域的发展。同时，这也引发了关于人类数学家在解决低垂和中等难度问题上未来角色的讨论。 该猜想涉及球形域上凸利普希茨函数的时间复杂度上界。据称，这一解决方案使用的是 GPT-5.6 Sol Pro 变体，而非标准的 Ultra 模型，社区对此进行了区分讨论。
+当连接到 Windows PC 时，LG 显示器会自动通过 Windows Update 安装软件（包括 McAfee 试用版），且未经用户同意。用户发现并报告了这一行为，引发了严重的隐私和安全担忧。 这个问题将合法硬件变成了安装不需要软件的途径，类似恶意软件行为。它可能影响数百万 LG 显示器用户，并暴露了 Windows 设备元数据交付系统的更大漏洞。 软件在显示器通过 HDMI 插入时立即安装，随系统启动运行，具有完全的系统访问权限和网络访问权限，且无需用户交互。用户发现可通过组策略或设备安装设置禁用自动下载制造商应用的变通方法。
 
-hackernews · mbustamanter · 7月18日 13:00 · [社区讨论](https://news.ycombinator.com/item?id=48957779)
+hackernews · baranul · 7月18日 10:21 · [社区讨论](https://news.ycombinator.com/item?id=48956688)
 
-**背景**: 凸优化是数学优化的一个子领域，研究在凸集上最小化凸函数的问题，广泛应用于机器学习、工程和经济学。许多凸问题可通过多项式时间算法解决，但某些复杂度边界已悬而未决数十年，其中包括 GPT-5.6 现在解决的这个猜想。
+**背景**: Windows Update 自动提供驱动程序和固件以确保硬件兼容性。但它也可以通过设备元数据安装来自硬件供应商的额外软件，这一功能依赖于微软对供应商的信任。这次事件表明，LG 滥用了这种信任，未经用户同意推送促销软件。
 
-**社区讨论**: 评论者对这一突破感到兴奋，有人指出这比 OpenAI 最近的证明更为小众。讨论还涉及对研究人员的影响，表明低垂的果实可能不再适合人类数学家。关于使用的是 Sol Pro 而非 Ultra 的澄清引发了对其架构差异的好奇。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://windowsforum.com/threads/lg-monitor-app-installer-pushes-mcafee-ads-on-windows-11.439030/">LG Monitor App Installer Pushes McAfee Ads on... | Windows Forum</a></li>
+<li><a href="https://support.microsoft.com/en-us/windows/update-drivers-through-device-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6">Update drivers through Device Manager in Windows - Microsoft...</a></li>
 
-**标签**: `#AI`, `#mathematics`, `#convex optimization`, `#GPT-5.6`, `#LLM reasoning`
+</ul>
+</details>
+
+**社区讨论**: 社区高度关注，许多用户将此行为比作恶意软件。用户提供了详细的变通方法，并争论责任是否完全在于 LG，还是微软也应对允许此类安装负责。一些人强调这是 Windows 系统性的安全问题，类似于过去的自动运行漏洞。
+
+**标签**: `#security`, `#privacy`, `#windows-update`, `#lg`, `#malware`
 
 ---
 
 <a id="item-3"></a>
-## [LG 显示器通过 Windows Update 静默安装软件引发隐私担忧](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent) ⭐️ 9.0/10
+## [中国 Kimi K3 模型通过蒸馏对标前沿模型](https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/) ⭐️ 9.0/10
 
-据多个来源报道，LG 显示器在用户不知情的情况下，通过 Windows Update 自动安装类似广告软件的应用程序。当显示器通过 HDMI 连接时，该软件会被安装，且具有完全系统访问权限，并在重启后持续运行。 这带来了严重的隐私和安全风险，因为它允许在未经用户同意的情况下安装第三方软件，可能导致广告软件或恶意软件。同时，这也破坏了用户信任，并揭示了 Windows Update 设备元数据功能的系统性问题。 当连接 LG 显示器时，该软件会自动安装，不显示任何提示。该软件可访问所有系统资源，并在系统启动时运行。解决方法是通过组策略或设备安装设置禁用自动下载设备应用程序。
+中国开发的 Kimi K3 模型通过模型蒸馏技术，在性能上达到了与 ChatGPT 5.6 和 Opus 4.8 等前沿模型相当的水平，拥有 2.8 万亿参数，定价为每百万 tokens 输入 3 美元、输出 15 美元。 这表明蒸馏技术能使后来者迅速赶超前沿实验室，挑战美国在人工智能领域的领先地位，并引发关于开放权重模型扩散的国家安全担忧。 Kimi K3 拥有 2.8 万亿参数，定价上与 ChatGPT 5.6 Sol（5 美元/30 美元）和 Opus 4.8（5 美元/25 美元）相比具有竞争力，但社区测试显示它在 19 美元的计划下执行单个任务消耗了近 5 小时的使用时间。
 
-hackernews · baranul · 7月18日 10:21 · [社区讨论](https://news.ycombinator.com/item?id=48956688)
+hackernews · sbochins · 7月18日 17:32 · [社区讨论](https://news.ycombinator.com/item?id=48960218)
 
-**背景**: Windows Update 可以在连接硬件时根据制造商提供的元数据自动安装设备驱动和相关软件。该功能旨在方便用户，但可能被滥用以推送不需要的应用程序。LG 将其显示器元数据配置为安装显示广告的应用程序，引发了对这种机制可信度的担忧。
+**背景**: 模型蒸馏从大型“教师”模型向小型“学生”模型传递知识，实现高效部署。开放权重模型公开训练参数，使更多人能使用。前沿模型指当前最强大的人工智能系统，通常需要大量算力和数据。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent">LG monitors silently install software through Windows Update without user consent - VideoCardz.com</a></li>
-<li><a href="https://cybersecuritynews.com/windows-update-installs-lg-monitor-app-pushes-mcafee-ads/">Windows Update Silently Installs LG Monitor App That Pushes...</a></li>
-<li><a href="https://www.privacyguides.org/news/2026/07/17/lg-monitors-caught-installing-adware-and-app-with-access-to-all-system-resources-without-asking/">LG Monitors Caught Installing Adware and App With Access to &quot;All System Resources&quot; Without Asking</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_distillation">Knowledge distillation - Wikipedia</a></li>
+<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
+<li><a href="https://www.datacamp.com/blog/frontier-models">Frontier Models Explained: What Defines the Cutting Edge of AI</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者表示愤怒，指出这相当于未经同意安装恶意软件。有人提供了通过组策略的解决方法，也有人批评微软允许这种行为，并将其与过去 USB 驱动器的自动运行问题相提并论。
+**社区讨论**: 评论者 nickysielicki 认为蒸馏不可避免且不是“攻击”，montroser 警告可能像 Napster 时代那样进行国家安全打击。credit\_guy 指出参数数量和定价相当，SwellJoe 则报告了实际使用中运行时间很长。
 
-**标签**: `#security`, `#privacy`, `#windows`, `#lg`, `#malware`
+**标签**: `#AI`, `#open-source`, `#model distillation`, `#national security`, `#frontier models`
 
 ---
 
 <a id="item-4"></a>
-## [Anthropic 将 Claude Fable 5 永久纳入订阅计划](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything) ⭐️ 9.0/10
+## [美国拟设类似 FINRA 的 AI 监管机构](https://www.bloomberg.com/news/articles/2026-07-17/us-considers-creating-finra-like-watchdog-to-vet-top-ai-models) ⭐️ 9.0/10
 
-2026 年 7 月 18 日，Anthropic 宣布从 7 月 20 日起，Claude Fable 5 将永久包含在 Max 和 Team Premium 订阅计划中，最初计划将其移除。这一逆转源于来自 OpenAI 的 GPT-5.6 Sol 和 Moonshot AI 的 Kimi 3 的竞争压力。 这一举措表明，AI 模型市场的激烈竞争可以迫使公司修改定价和访问策略，使希望在不增加 API 成本的情况下使用顶级模型的用户受益。这也凸显了计算能力限制在模型部署决策中的重要性。 Claude Fable 5 在 Max 和 Team Premium 计划（每月 100-200 美元）中将按通常限制的 50%提供。Pro 和 Team Standard 用户将获得一次性 100 美元信用额度，并继续通过使用额度访问，而每月 20 美元的计划仍然排除 Fable 5。
-
-rss · Simon Willison · 7月18日 06:00
-
-**背景**: Claude Fable 5 是 Anthropic 最先进的模型，针对编码、智能体以及文档密集型任务进行了优化，具备视觉能力。它面临来自 OpenAI 的 GPT-5.6 Sol（具有强大的编码和推理能力的旗舰模型）和 Moonshot AI 的 Kimi K3（一个 2.8T 参数的开源权重模型）的竞争。Anthropic 最初因计算能力问题计划从订阅中移除 Fable 5，但在竞争压力下逆转了这一决定。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.anthropic.com/claude/fable">Claude Fable \ Anthropic</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.6">GPT-5.6 - Wikipedia</a></li>
-<li><a href="https://platform.kimi.ai/docs/guide/kimi-k3-quickstart">Kimi K3 - Kimi API Platform</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Anthropic`, `#Claude Fable 5`, `#AI`, `#Pricing`, `#Competition`
-
----
-
-<a id="item-5"></a>
-## [Stack Overflow 衰退图表](https://data.stackexchange.com/stackoverflow/query/1953768#graph) ⭐️ 8.0/10
-
-Stack Exchange Data Explorer 上一张图表显示 Stack Overflow 活动长期下降，评论认为这既源于内部政策问题，也源于 ChatGPT 等 AI 聊天机器人的崛起。 这一趋势标志着开发者在线寻求帮助的方式发生根本性转变，可能削弱 Stack Overflow 作为程序员主要问答资源的地位。 该图表由用户 &\#x27;Glorfindel&\#x27; 制作，显示活动在 2017-2018 年左右达到峰值，甚至在 ChatGPT 发布前就已稳步下降，2022 年后下降更急剧。社区评论指出 Stack Overflow 的严厉审核以及被 Prosus 收购是促成因素。
-
-hackernews · secretslol · 7月18日 11:12 · [社区讨论](https://news.ycombinator.com/item?id=48956949)
-
-**背景**: Stack Overflow 是程序员常用的问答平台，用户在此提问和回答技术问题。其衰退被归因于内部审核政策疏远新用户，以及 ChatGPT 等提供即时对话式答案的 AI 工具崛起。2021 年被 Prosus 收购也引发了对网站发展方向的担忧。
-
-**社区讨论**: 评论者普遍认为 Stack Overflow 的衰退早于 AI 出现，指责其排他性文化和缺乏社区建设。有人指出 Prosus 收购后、ChatGPT 之前的下降，另一些人则对比了 LLM 的帮助性与 SO 的敌对回应。
-
-**标签**: `#Stack Overflow`, `#AI`, `#Community`, `#Q&amp;A`, `#Decline`
-
----
-
-<a id="item-6"></a>
-## [TP-Link Kasa 摄像头通过未认证 UDP 泄露 GPS 信息长达 6 年](https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md) ⭐️ 8.0/10
-
-一名安全研究员披露，TP-Link Kasa EC71 摄像头通过本地网络上的未认证 UDP 数据包广播 GPS 坐标，该漏洞存在了六年之久且从未被修复。 该漏洞暴露了物联网设备的隐私风险，使同一本地网络上的任何人都能追踪设备位置。这凸显了消费类物联网产品需要更强安全实践的紧迫性。 该漏洞仅限于局域网访问，攻击者必须处于同一网络才能利用。研究员的报告被批评可能由 AI 生成，但核心问题已得到确认。
-
-hackernews · BadChemical · 7月17日 21:42 · [社区讨论](https://news.ycombinator.com/item?id=48952565)
-
-**背景**: 未认证的 UDP 数据包是在发送或接收时不进行任何验证的数据包，常用于物联网设备以简化通信。以这种方式传输的 GPS 位置数据可被同一本地网络上的任何设备拦截。许多低成本物联网设备优先考虑易用性而非安全性，从而导致此类漏洞。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/cve-2022-26143-amplification-attack/">CVE-2022-26143: A Zero-Day vulnerability for launching UDP amplification DDoS attacks</a></li>
-<li><a href="https://hackaday.com/2026/05/08/broadcasting-gps-on-the-local-network-to-help-geoclue-find-you/">Broadcasting GPS On The Local Network To Help Geoclue Find You | Hackaday</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 一些评论者淡化其严重性，指出攻击需要局域网访问，且位置信息可通过其他方式推断。另一些人批评该报告可能由 AI 生成，而有人则对来自中国制造商的物联网安全实践提出更广泛的担忧。
-
-**标签**: `#security`, `#IoT`, `#vulnerability`, `#TP-Link`, `#privacy`
-
----
-
-<a id="item-7"></a>
-## [Prism 编译漏洞泄露用户论文，引发隐私担忧](https://www.reddit.com/r/MachineLearning/comments/1uz75qt/prism_accidentally_leaked_d/) ⭐️ 8.0/10
-
-Prism 论文编译过程中出现一个漏洞，意外返回了其他用户的论文而非目标论文，暴露出严重的隐私缺陷。该平台在首次报告后 10 分钟内被下线。 此事件凸显了机器学习研究人员使用第三方编译服务时面临的严重隐私风险，可能导致未发表手稿泄露。它削弱了人们对处理敏感预发表工作平台的信任。 该漏洞最初在 Discord 和 Twitter 上被报告，Prism 团队迅速响应，将网站下线。受影响的用户担心自己的论文是否也被泄露给他人。
-
-reddit · r/MachineLearning · /u/Few-Monitor5103 · 7月17日 17:59
-
-**背景**: Prism 是机器学习研究人员用于编译和格式化论文的平台，通常用于会议或期刊投稿。编译步骤处理用户上传的内容并生成最终文档。该流程中的漏洞可能导致一个用户的内容被提供给另一个用户，这是一种严重的数据泄露情形。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://prismml.com/about">PrismML — About</a></li>
-
-</ul>
-</details>
-
-**标签**: `#bug`, `#security`, `#paper leak`, `#ML platform`
-
----
-
-<a id="item-8"></a>
-## [SpaceX 与五角大楼谈判数十亿美元 AI 算力协议](https://www.wsj.com/tech/ai/spacex-in-talks-to-provide-computing-power-for-pentagons-ai-push-15e752e4) ⭐️ 8.0/10
-
-SpaceX 正与美国国防部谈判，拟提供用于运行人工智能模型的数据中心算力，交易金额可能高达数十亿美元。 该交易将大幅扩展 SpaceX 在国家安全和 AI 基础设施市场的作用，若最终达成，可能重塑五角大楼获取 AI 应用云计算的方式。 谈判仍在进行中，存在破裂可能；SpaceX 近月已与 Anthropic 和谷歌签署了类似算力供应协议，并计划大幅扩展云计算业务。
-
-telegram · zaihuapd · 7月18日 01:44
-
-**背景**: SpaceX 已运营 Starshield，这是 Starlink 子公司的一个部门，为美国政府建造军用低地球轨道卫星，提供导弹跟踪、侦察和安全通信等能力。五角大楼正在加速获取云计算能力，以支持国家安全和日常作战中的 AI 应用。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/SpaceX_Starshield">SpaceX Starshield</a></li>
-<li><a href="https://www.spacex.com/starshield?ref=illdefined.space">SpaceX - Starshield</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#云计算`, `#国防`, `#SpaceX`, `#五角大楼`
-
----
-
-<a id="item-9"></a>
-## [Kimi K3 登顶 DeepSWE 第三，首个开源权重前沿模型](https://deepswe.datacurve.ai/blog/deepswe-v1-1) ⭐️ 8.0/10
-
-截至 2026 年 7 月 17 日，Kimi K3 在 DeepSWE 基准测试中排名第三，成为首个达到前沿性能的开源权重模型，性能接近 Claude Fable 5 和 GPT-5.6 Sol 等专有模型。 这标志着开源权重 AI 编程模型的一个重要里程碑，表明开源权重模型能够与顶级专有代理竞争，可能使高级编码能力更加普及。 Kimi K3 拥有 2.8 万亿参数，采用 Kimi Delta Attention 和 Attention Residuals，支持高达 1,048,576 个 token 的上下文窗口，其完整模型权重将于 2026 年 7 月 27 日前发布。
-
-telegram · zaihuapd · 7月18日 02:29
-
-**背景**: DeepSWE 是一个长周期软件工程基准测试，旨在评估编程代理在原始复杂任务上的表现，并减少基准测试泄漏。开源权重模型是指其训练权重公开可用的 AI 模型，允许他人运行和微调，但不一定完全开源。Kimi K3 是 Kimi 公司的最新旗舰模型，该公司专注于开源权重 AI。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://deepswe.datacurve.ai/">DeepSWE measures frontier coding agents on original, long-horizon...</a></li>
-<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K 3 Tech Blog: Open Frontier Intelligence</a></li>
-<li><a href="https://kimi-ai.chat/models/kimi-k3/">Kimi K 3 : 1M Context, API Pricing &amp; Limits</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI coding`, `#benchmark`, `#open-weight`, `#Kimi K3`, `#DeepSWE`
-
----
-
-<a id="item-10"></a>
-## [OpenRouter 被传收购，估值超过 13 亿美元](https://www.theinformation.com/articles/startup-openrouter-fields-multi-billion-dollar-takeover-interest) ⭐️ 8.0/10
-
-AI 模型路由平台 OpenRouter 已被多家大型科技公司接触，探讨潜在收购可能，意向估值可能高于其今年 5 月 B 轮融资后约 13 亿美元的估值。 此消息凸显了 AI 基础设施日益增长的战略重要性，特别是优化访问不同 AI 模型的模型路由平台，并表明此类中间件初创公司正成为科技巨头争夺 AI 能力时的宝贵并购目标。 OpenRouter 平台目前路由超过 400 个模型，服务约 800 万用户，每月处理约 100 万亿 token，2026 年初年化收入已达约 5000 万美元。该公司由 Alphabet 旗下 CapitalG 领投的 B 轮融资共筹集 1.13 亿美元，投后估值约 13 亿美元。
-
-telegram · zaihuapd · 7月18日 03:45
-
-**背景**: 模型路由是一种基础设施模式，其中轻量级代理层检查传入的推理请求，并根据成本、延迟和能力等因素将每个请求定向到最佳模型或端点。OpenRouter 是一家美国 AI 公司，运营统一 API 平台，供开发者访问来自不同提供商的多个大语言模型和生成式 AI 模型。这种方法简化了使用不同 AI 模型的流程，并优化了性能和成本。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/OpenRouter">OpenRouter</a></li>
-<li><a href="https://medium.com/@Colorwheelx/what-is-model-routing-and-why-it-matters-for-smarter-ai-systems-65fc9fa6474e">What Is Model Routing , and Why It Matters for Smarter AI... | Medium</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI infrastructure`, `#M&amp;A`, `#OpenRouter`, `#model routing`, `#startup`
-
----
-
-<a id="item-11"></a>
-## [台积电 A14 制程进展超预期，良率性能逼近 90%](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-confirms-significant-yield-and-performance-improvements-in-a14-update-strong-interest-from-ai-hpc-and-smartphone-customers) ⭐️ 8.0/10
-
-台积电宣布其 A14（1.4 纳米级）制程已接近 90% 的目标性能和 256 Mb SRAM 良率，较 4 月份的 85% 和 80% 以上有所提升。CEO 魏哲家表示，智能手机、AI 和高性能计算领域客户兴趣浓厚，设计流片进度提前。 这一进展表明台积电有望将最先进制程的量产时间从 2028 年底提前，从而加速下一代 AI 芯片、高性能计算和智能手机的性能提升。 A14 是台积电第二代环绕栅极（GAA）纳米片晶体管制程，基于 N2 经验。与 N2 相比，A14 在同功耗下性能提升 10-15%，同频下功耗降低 25-30%，逻辑晶体管密度提高 23%。
-
-telegram · zaihuapd · 7月18日 05:00
-
-**背景**: 台积电的 A14 制程（1.4 纳米级）采用 GAA 纳米片场效应晶体管，这是 FinFET 技术的继任者，栅极从四面环绕沟道，实现更好的电学控制。“流片”是指在生产掩模版之前的最终设计阶段。A14 预计在 2028 年左右量产，但快速进展可能允许提前开始。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.163.com/dy/article/I1FRKMC90511CPMT.html">FinFET接班人，详解 GAA 的机遇和挑战|栅极|电容|fet...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#半导体`, `#台积电`, `#制程技术`, `#AI芯片`, `#高性能计算`
-
----
-
-<a id="item-12"></a>
-## [特朗普政府考虑设立 FINRA 式 AI 安全监管机构](https://www.bloomberg.com/news/articles/2026-07-17/us-considers-creating-finra-like-watchdog-to-vet-top-ai-models) ⭐️ 8.0/10
-
-特朗普政府正考虑设立一个类似 FINRA 的独立监管机构，负责审查顶级 AI 模型的安全性。该提案由财政部长斯科特·贝森特牵头，白宫幕僚长苏茜·威尔斯审阅，旨在应对华尔街的网络安全担忧以及行业对临时政府管控的不满。 此举可能重塑 AI 治理，通过建立金融式自我监管的常设行业资助监管机构，让华尔街和硅谷在安全标准上拥有更大发言权。它回应了近期与 Anthropic 和 OpenAI 在模型发布上的争议，并与 Google DeepMind 首席执行官的建议方向一致。 拟议的机构将像 FINRA 一样向 SEC 汇报，并由行业资助。然而，总统特朗普尚未审阅该方案，框架仍在讨论中，可能会有调整。
+特朗普政府正考虑建立一个类似于 FINRA 的独立 AI 监管机构，负责审查顶尖 AI 模型的安全性。该提案由财政部长斯科特·贝森特牵头，白宫幕僚长苏茜·威尔斯正在审阅。 这标志着 AI 治理的重大转变，提议建立一个自我监管组织，以平衡华尔街的安全担忧和硅谷的创新利益。这可能为美国如何监管先进 AI 树立先例，并可能影响全球标准。 拟议的机构将向 SEC 汇报，类似于 FINRA 与证券监管机构的关系。值得注意的是，Anthropic 和 OpenAI 此前曾对政府要求修改或限制其最新模型表示异议，凸显了行业紧张局势。
 
 telegram · zaihuapd · 7月18日 05:45
 
-**背景**: FINRA（金融业监管局）是美国一家私有的自我监管组织（SRO），负责监管经纪公司和交易所市场。它在证券交易委员会（SEC）的监督下运作，但由其成员公司资助。该提案旨在为 AI 行业创建类似的 SRO，由领先的 AI 公司资助并参与，共同制定和执行先进模型的安全标准。
+**背景**: FINRA（金融业监管局）是一个私营的自我监管组织，在 SEC 的监督下监管经纪公司和交易所市场。拟议的 AI 监管机构将采用类似模式，由行业资助，对先进 AI 模型进行安全审查。这一做法与 Google DeepMind CEO 德米斯·哈萨比斯的建议方向一致。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -264,6 +112,204 @@ telegram · zaihuapd · 7月18日 05:45
 </ul>
 </details>
 
-**标签**: `#AI监管`, `#政府政策`, `#人工智能`, `#网络安全`
+**标签**: `#AI regulation`, `#policy`, `#Trump administration`, `#FINRA`, `#model safety`
+
+---
+
+<a id="item-5"></a>
+## [Fable 5 对阵 GPT-5.6 Sol：NP 难问题上的/goal 指令效果评估](https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/) ⭐️ 8.0/10
+
+Charles Azam 的一篇博客文章评估了在 NP 难问题上使用/goal 指令是否能提升 Fable 5（Anthropic）和 GPT-5.6 Sol（OpenAI）的性能。结果表明/goal 只能提供边际收益，且效果依赖于搜索策略；Ultra 模式可能更有效。 这项对比突出了领先 AI 模型在解决 NP 难问题（对优化任务至关重要）上的实际差异。研究结果也为提示工程策略提供了参考，表明像/goal 这样的简单指令相比更复杂的代理方法效果有限。 该博客使用特定的 NP 难问题进行基准测试，衡量成功率和解决方案质量。GPT-5.6 Sol 拥有 1.05M 上下文窗口和 128k 输出令牌，而 Fable 5 是 Anthropic 在 FrontierBench 编程评测中得分最高的模型。/goal 指令是一种设定明确目标的提示技术。
+
+hackernews · couAUIA · 7月18日 11:00 · [社区讨论](https://news.ycombinator.com/item?id=48956879)
+
+**背景**: NP 难问题在计算上难以处理，通常需要启发式或基于搜索的方法。现代大型语言模型（如 GPT-5.6 Sol 和 Fable 5）可用于生成解决这类问题的代码或策略。/goal 指令是一种简单的提示添加，旨在聚焦模型行为；然而，更高级的方法（如 Ultra 模式，使用多个并行代理并进行对抗性审查）可能效果更好。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.anthropic.com/claude/fable">Claude Fable \ Anthropic</a></li>
+<li><a href="https://simtheory.ai/model-card/gpt-5.6-sol/">GPT - 5 . 6 Sol - AI Model Details | Simtheory</a></li>
+<li><a href="https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained">GPT - 5 . 6 Sol vs Terra vs Luna: Which Tier Should You Actually Use?</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者指出，Anthropic 的 Claude（Fable 5）在编码任务上正落后于 OpenAI 的 Codex，用户抱怨速度慢且问题解决能力不足。还有人认为/goal 在短会话中可能有帮助，但在长会话中效果不佳，并且 GPT 模型在 AtCoder Heuristics 等竞赛中的表现表明它们天生更擅长优化问题。
+
+**标签**: `#AI comparison`, `#LLM evaluation`, `#NP-hard problem`, `#coding assistant`, `#goal directive`
+
+---
+
+<a id="item-6"></a>
+## [Stack Overflow 衰落：AI 影响与社区壁垒](https://data.stackexchange.com/stackoverflow/query/1953768#graph) ⭐️ 8.0/10
+
+来自 Stack Exchange Data Explorer 的图表显示 Stack Overflow 活动显著下降，这被归因于 ChatGPT 等 AI 工具的兴起以及网站自身的 restrictive 社区政策。 这一趋势凸显了 AI 驱动的替代方案和不良的社区治理如何侵蚀一个曾经占主导地位的平台，影响依赖 Stack Overflow 寻求帮助的数百万开发者。 该图表显示活动下降，尤其是在 2021 年被 Prosus 收购和 2022 年底 ChatGPT 发布之后，一些用户报告在尝试访问数据时遇到速率限制。
+
+hackernews · secretslol · 7月18日 11:12 · [社区讨论](https://news.ycombinator.com/item?id=48956949)
+
+**背景**: Stack Overflow 是一个面向程序员的问答平台，用户在此提出和回答技术问题。其严格的审核和踩文化为新手设置了高门槛，而 ChatGPT 等 AI 工具提供了无需社交摩擦的直接答案。
+
+**社区讨论**: 评论者普遍认为 Stack Overflow 的严格政策和缺乏社区感驱走了用户，有人指出该网站因不鼓励对话而&\#x27;自掘坟墓&\#x27;。对 Prosus 的收购也被视为一个转折点。
+
+**标签**: `#Stack Overflow`, `#AI impact`, `#community decline`, `#software engineering`
+
+---
+
+<a id="item-7"></a>
+## [PHK 发表告别文，反思自行车棚效应](https://queue.acm.org/detail.cfm?id=3818307) ⭐️ 8.0/10
+
+Poul-Henning Kamp \(PHK\) 在 ACM Queue 上发表了一篇题为《再见，感谢所有的自行车棚》的反思文章，重新审视了他于 1999 年提出的自行车棚现象。 这篇文章重新激发了关于软件工程中一个基本反模式的讨论，提醒团队优先处理重要决策而非琐事，从而提升项目效率。 PHK 最初用自行车棚隐喻来解释人们为何会在诸如车棚颜色等琐碎问题上花费过多时间，而忽略复杂的技术决策；本文以告别作形式呈现。
+
+hackernews · Ygg2 · 7月18日 17:27 · [社区讨论](https://news.ycombinator.com/item?id=48960155)
+
+**背景**: 自行车棚，又称琐事定律，描述了人们对琐碎问题给予不成比例关注的现象。PHK 在 1999 年的 FreeBSD FAQ 中引入了该术语。这一概念在软件工程中被广泛用于警示注意力分配不当。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Law_of_triviality">Law of triviality - Wikipedia</a></li>
+<li><a href="https://fourweekmba.com/bikeshedding/">What Is Bikeshedding And Why It Matters In Business - FourWeekMBA</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者对这篇文章表示赞赏，一些人强调了可逆决策概念作为解决自行车棚效应的方法。其他人提到了 PHK 的贡献如 MD5crypt。还出现了关于年龄限制和科技领域性别问题的旁支讨论。
+
+**标签**: `#software engineering`, `#bikeshedding`, `#project management`, `#community`
+
+---
+
+<a id="item-8"></a>
+## [Anthropic 将 Claude Fable 5 永久纳入订阅计划](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything) ⭐️ 8.0/10
+
+Anthropic 宣布自 7 月 20 日起，Claude Fable 5 将永久纳入 Max 和 Team Premium 计划，使用限制为 50%，这一决定推翻了此前因 GPT-5.6 Sol 和 Kimi 3 的竞争压力而将模型从订阅中移除的计划。 此举确保订阅用户继续使用 Anthropic 的最佳模型，使订阅计划在与 OpenAI 和 Kimi 的竞争中保持竞争力，并缓解了用户对失去顶级 AI 能力访问权限的担忧。 每月 20 美元的订阅计划仍不包含 Fable 5；只有 Max（每月 100/200 美元）和 Team Premium 订阅用户受益。Pro 和 Team Standard 用户可获得一次性 100 美元积分，并通过使用额度访问 Fable。
+
+rss · Simon Willison · 7月18日 06:00
+
+**背景**: Claude Fable 5 是 Anthropic 旗下的 Mythos 级大型语言模型，擅长编程和自主任务。由于计算容量限制，该模型最初计划从订阅中移除，但 OpenAI 的 GPT-5.6 Sol（在基准测试中优于 Fable 5）和 Kimi 3 等竞品的推出迫使 Anthropic 改变了策略。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5 \ Anthropic</a></li>
+<li><a href="https://openai-dotcom-git-main-openai.vercel.app/index/gpt-5-6/">GPT - 5 . 6 : Frontier intelligence that scales with your ambition | OpenAI</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#Anthropic`, `#Claude`, `#Fable 5`, `#GPT-5.6`
+
+---
+
+<a id="item-9"></a>
+## [指控：DeepMind/Kaggle 大奖颁给无意义的 AI 提交](https://www.reddit.com/r/MachineLearning/comments/1uzyf66/did_blatant_ai_slop_just_win_a_25k_usd_deepmind/) ⭐️ 8.0/10
+
+一位 Reddit 用户声称，由 Google DeepMind 赞助的 Kaggle 竞赛&\#x27;衡量向 AGI 进展&\#x27;的获奖提交（获得 25,000 美元大奖）内容不连贯、结构糟糕，该用户基于对论文、方法论、代码和数据的详细审查提出了这一指控。 这一指控引发了关于高知名度 AI 竞赛评估标准诚信性的严重质疑，尤其是由 DeepMind 等领先组织赞助的竞赛，可能削弱对社区驱动基准开发的信任。 该提交涉及向 LLM 呈现其他 LLM 关于某个棘手情况的五个主张的替代观点，但用户描述最终的论文是&\#x27;氛围感的意大利面条堆&\#x27;，篇幅是规定格式的十倍，且没有明显的严谨分析。
+
+reddit · r/MachineLearning · /u/TheWerkmeister · 7月18日 15:10
+
+**背景**: Kaggle 竞赛是知名平台，数据科学家和机器学习从业者在此竞争解决问题，通常由大型科技公司赞助。&\#x27;衡量向 AGI 进展&\#x27;竞赛特别要求参与者设计基于认知科学的新型 AI 基准。此事件凸显了评估主观或创造性提交的挑战，因为严谨性难以量化。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.linkedin.com/posts/googledeepmind_how-do-we-measure-progress-toward-agi-it-activity-7439782084551806976-0e2M">How do we measure progress toward AGI ? It takes a village – and...</a></li>
+<li><a href="https://www.mindstudio.ai/blog/google-agi-benchmark-10-cognitive-dimensions">How Google&#x27;s New AGI Benchmark Measures Intelligence Across 10 Cognitive Dimensions | MindStudio</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 帖子引发了讨论，一些评论支持用户的分析并质疑评委的监督，而另一些则支持组织者的立场，认为审查得当、结果是主观的。讨论反映了对 AI 研究竞赛中可重复性和质量控制的广泛担忧。
+
+**标签**: `#AI ethics`, `#Kaggle`, `#DeepMind`, `#research integrity`, `#LLM evaluation`
+
+---
+
+<a id="item-10"></a>
+## [Meta 计划向 Anthropic 出租 AI 算力，潜在交易达百亿美元](https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html) ⭐️ 8.0/10
+
+Meta 正与 AI 初创公司 Anthropic 谈判，计划将其 AI 数据中心算力出租给后者，潜在交易规模达 100 亿美元，为期两年。Anthropic 于 2026 年 6 月提出该方案，Meta 正在评估中。 这笔交易凸显了 AI 算力的极度稀缺性，可能为 Meta 开辟新的收入来源，同时验证其大规模数据中心投资的合理性。这也反映了大型科技公司向 AI 初创企业出租闲置算力的趋势日益增长。 如果最终达成协议，Anthropic 将按月向 Meta 付款，双方均有权提前退出。谈判仍处于早期阶段，不一定能达成交易；Meta 今年计划投入高达 1450 亿美元，其中大部分用于 AI 和数据中心建设。
+
+telegram · zaihuapd · 7月18日 01:14
+
+**背景**: AI 算力（即 &\#x27;compute&\#x27;）已成为训练和运行大型语言模型的关键且稀缺的资源。Meta、微软、谷歌等大型科技公司正投入数十亿美元建设数据中心，而出租闲置算力已成为一种抵消成本并满足市场需求的方式。
+
+**标签**: `#AI`, `#cloud computing`, `#Meta`, `#Anthropic`, `#data centers`
+
+---
+
+<a id="item-11"></a>
+## [SpaceX 与五角大楼谈判 AI 算力交易](https://www.wsj.com/tech/ai/spacex-in-talks-to-provide-computing-power-for-pentagons-ai-push-15e752e4) ⭐️ 8.0/10
+
+SpaceX 正与美国国防部谈判，拟提供用于运行人工智能模型的数据中心算力，交易金额可能高达数十亿美元。 这笔交易凸显了 AI 基础设施对国家安全的重要性，并可能显著扩大 SpaceX 在国防领域的作用，影响云计算市场格局。 谈判仍在进行中，存在破裂可能。五角大楼近期已批准 SpaceX 与亚马逊、谷歌、微软和甲骨文等公司在机密环境中使用 AI 模型。此外，SpaceX 近月还与 Anthropic 和谷歌签署了类似的算力供应协议。
+
+telegram · zaihuapd · 7月18日 01:44
+
+**背景**: 五角大楼正加速获取云计算能力，以支持国安部门及日常作战中的 AI 应用。SpaceX 近期也在扩展其云计算业务，不仅限于卫星发射，此次谈判标志着其可能成为国防云市场的重要参与者。
+
+**标签**: `#SpaceX`, `#AI算力`, `#五角大楼`, `#国家安全`, `#云计算`
+
+---
+
+<a id="item-12"></a>
+## [OpenRouter 被传收购，估值超 13 亿美元](https://www.theinformation.com/articles/startup-openrouter-fields-multi-billion-dollar-takeover-interest) ⭐️ 8.0/10
+
+AI 模型路由平台 OpenRouter 据报道已吸引多家大型科技公司的收购兴趣，估值超过 13 亿美元。 这一潜在收购案标志着 AI 基础设施领域的重大整合，并验证了模型路由市场的重要性，该市场对于优化 AI 模型使用至关重要。 OpenRouter 路由超过 400 个模型，服务约 800 万用户，每月处理约 100 万亿 token，到 2026 年初年化收入约 5000 万美元。
+
+telegram · zaihuapd · 7月18日 03:45
+
+**背景**: OpenRouter 是一个 AI 模型路由平台，充当中介角色，将用户查询导向最适合的 AI 模型，以优化成本、速度或质量。Token 是 AI 模型处理文本的基本单位，一个 token 大约相当于 4 个英文字符。该平台处理海量 token，表明其使用量巨大。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.augmentcode.com/tools/model-routing-platforms-ai-agent-systems">5 Best Model Routing Platforms for AI Agent Systems | Augment Code</a></li>
+<li><a href="https://www.braintrust.dev/articles/best-llm-routers-2026">Best LLM routers and model routing platforms in 2026 - Articles - Braintrust</a></li>
+<li><a href="https://blogs.nvidia.com/blog/ai-tokens-explained/">What Are AI Tokens? The Language and Currency Powering Modern AI | NVIDIA Blog</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI infrastructure`, `#acquisition`, `#model routing`, `#OpenRouter`, `#venture capital`
+
+---
+
+<a id="item-13"></a>
+## [台积电 A14 制程良率性能接近 90%，进度超前](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-confirms-significant-yield-and-performance-improvements-in-a14-update-strong-interest-from-ai-hpc-and-smartphone-customers) ⭐️ 8.0/10
+
+台积电在财报电话会上宣布，其 A14（1.4 纳米级）制程的器件性能已达到目标水平约 90%，256 Mb SRAM 良率也接近 90%，而 4 月份这两项数据分别为 85%以上和 80%以上。CEO 魏哲家透露，智能手机、AI 和高性能计算客户兴趣强烈，新设计流片进度快于计划。 这一里程碑证明了台积电在先进半导体制造领域的领先地位，A14 预计相比 N2 可提升 10%至 15%的性能或降低 25%至 30%的功耗。该进展可能加速 1.4nm 技术在 AI 加速器、高端智能手机和 HPC 芯片中的应用，有望改变行业路线图。 A14 计划于 2028 年下半年量产，目前进度大幅领先同期 N2。该制程采用第二代 GAA 纳米片晶体管，可沿用 N2 积累的经验，逻辑晶体管密度提升 23%。
+
+telegram · zaihuapd · 7月18日 05:00
+
+**背景**: GAA（全环绕栅极）纳米片晶体管是 FinFET 技术的接班人，能在先进节点提供更好的静电控制和更低的漏电流。台积电的 A14 是 1.4 纳米级制程，代表其继即将量产的 N2（2 纳米）节点之后的下一步。早期阶段的高良率和性能表明工艺成熟度较高，这对经济高效的量产至关重要。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://community.aijishu.com/a/1060000000394639">FinFET接班人，详解 GAA ...</a></li>
+<li><a href="https://www.163.com/dy/article/I1FRKMC90511CPMT.html">FinFET接班人，详解 GAA 的机遇和挑战|栅极|电容|fet...</a></li>
+<li><a href="https://mp.ofweek.com/ee/a256714604647">每片晶圆30万元也照买！ 苹果抢占 1 . 4 纳 米 制 程 深层布局曝光 - 维科号V</a></li>
+
+</ul>
+</details>
+
+**标签**: `#半导体`, `#台积电`, `#先进制程`, `#A14`, `#良率`
+
+---
+
+<a id="item-14"></a>
+## [B 站展示开源 AI 伙伴 Project N.E.K.O.](https://finance.sina.com.cn/roll/2026-07-18/doc-iniifanf8394663.shtml) ⭐️ 8.0/10
+
+在 2026 年上海世界人工智能大会上，哔哩哔哩展示了“猫娘计划”（Project N.E.K.O.），这是一个开源的主动式全模态 AI 伙伴，能通过屏幕捕获理解桌面内容并主动发起对话。 该项目展示了开源 AI 伙伴的重大进展，结合了多模态感知、本地处理以保护隐私以及主动对话能力，GitHub 超过 1,000 星标和 Steam 超过 10,000 用户表明社区兴趣浓厚。 Project N.E.K.O.支持 Live2D 和 VRM 角色引擎、通过 VoiceClone 进行声线克隆，并采用 UI、AI 大脑与记忆系统分离的架构，用户可将核心数据完全保留在本地。
+
+telegram · zaihuapd · 7月18日 06:45
+
+**背景**: Live2D 是一种从静态图像创建 2D 动画的技术，常用于虚拟角色。VRM 是一种为 VR 应用设计的标准化 3D 化身文件格式。VoiceClone 指基于 AI 的声音克隆，能从短音频样本中复制人的声音。这些技术共同实现了个性化、交互式 AI 伙伴的创建。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GJiYwbz1xd0">Live 2 D Body Angles Tutorial for Beginners - YouTube</a></li>
+<li><a href="https://vrm.dev/en/">3D humanoid avatar file format for VR | VRM</a></li>
+<li><a href="https://voicecloneai.app/blog/how-ai-voice-cloning-works">How AI Voice Cloning Works: A Complete Guide... | VoiceClone AI</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI companion`, `#open-source`, `#multi-modal`, `#voice cloning`, `#community-driven`
 
 ---
