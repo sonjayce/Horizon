@@ -28,17 +28,19 @@ jobs:
             git checkout --orphan gh-pages
           fi
 
-          # 清理所有文件
-          git rm -rf .
+          # 删除所有文件（排除 .github 目录）
+          find . -mindepth 1 -maxdepth 1 ! -name '.github' -exec git rm -rf {} +
 
-          # 复制 docs 目录内容
+          # 复制 docs 目录内容到根目录
           cp -r docs/* .
 
-          # 创建 .nojekyll 文件
+          # 创建 .nojekyll 文件（禁用 Jekyll）
           echo "# Horizon GitHub Pages" > .nojekyll
 
-          # 添加并提交
+          # 添加所有更改
           git add -A
+
+          # 提交
           git commit -m "docs: 部署 GitHub Pages
 
           - 自动部署 Horizon 日报
