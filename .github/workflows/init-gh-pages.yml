@@ -13,40 +13,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create gh-pages branch
-        run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-
-          # 检查 gh-pages 分支是否存在
-          if git ls-remote --heads origin gh-pages | grep -q gh-pages; then
-            echo "gh-pages 分支已存在，切换到该分支"
-            git checkout gh-pages
-            git pull origin gh-pages
-          else
-            echo "创建新的 gh-pages 分支"
-            git checkout --orphan gh-pages
-          fi
-
-          # 删除所有文件（排除 .github 目录）
-          find . -mindepth 1 -maxdepth 1 ! -name '.github' -exec git rm -rf {} +
-
-          # 复制 docs 目录内容到根目录
-          cp -r docs/* .
-
-          # 创建 .nojekyll 文件（禁用 Jekyll）
-          echo "# Horizon GitHub Pages" > .nojekyll
-
-          # 添加所有更改
-          git add -A
-
-          # 提交
-          git commit -m "docs: 部署 GitHub Pages
-
-          - 自动部署 Horizon 日报
-          - 部署时间: $(date '+%Y-%m-%d %H:%M:%S')
-          Co-authored-by: GitHub Actions <actions@github.com>"
-
-          # 推送到远程
-          git push -u origin gh-pages
-          echo "✅ gh-pages 分支部署成功！"
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'docs: 初始化 GitHub Pages 部署'
