@@ -197,17 +197,17 @@ class HorizonOrchestrator:
             and self.config.email.enabled
             and self.config.email.imap_enabled
         ):
-            self.console.print("📧 Checking for new email subscriptions...")
+            self.console.print("[EMAIL] Checking for new email subscriptions...")
             self.email_manager.check_subscriptions(self.storage)
 
         try:
             # 1. Determine time window
             since = self._determine_time_window(force_hours)
-            self.console.print(f"📅 Fetching content since: {since.strftime('%Y-%m-%d %H:%M:%S')}\n")
+            self.console.print(f"[TIME] Fetching content since: {since.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
             # 2. Fetch content from all sources
             all_items = await self.fetch_all_sources(since)
-            self.console.print(f"📥 Fetched {len(all_items)} items from all sources\n")
+            self.console.print(f"[FETCHED] Fetched {len(all_items)} items from all sources\n")
 
             if self.last_fetch_report and self.last_fetch_report.all_failed:
                 raise RuntimeError(self.last_fetch_report.failure_message())
@@ -220,13 +220,13 @@ class HorizonOrchestrator:
             merged_items = self.merge_cross_source_duplicates(all_items)
             if len(merged_items) < len(all_items):
                 self.console.print(
-                    f"🔗 Merged {len(all_items) - len(merged_items)} cross-source duplicates "
+                    f"[MERGE] Merged {len(all_items) - len(merged_items)} cross-source duplicates "
                     f"→ {len(merged_items)} unique items\n"
                 )
 
             # 4. Analyze with AI
             analyzed_items = await self._analyze_content(merged_items)
-            self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
+            self.console.print(f"[AI] Analyzed {len(analyzed_items)} items with AI\n")
 
             # 5. Filter, deduplicate, and balance the digest
             filtering_result = await self.filter_items(
@@ -261,7 +261,7 @@ class HorizonOrchestrator:
 
                 # Save to data/summaries/
                 summary_path = self.storage.save_daily_summary(today, summary, language=lang)
-                self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
+                self.console.print(f"[SAVED] Saved {lang.upper()} summary to: {summary_path}\n")
 
                 # Copy to docs/ for GitHub Pages
                 try:
@@ -294,13 +294,13 @@ class HorizonOrchestrator:
                     with open(dest_path, "w", encoding="utf-8") as f:
                         f.write(front_matter + summary_content)
 
-                    self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
+                    self.console.print(f"[COPY] Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
                 except Exception as e:
-                    self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
+                    self.console.print(f"[yellow][WARN]  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
 
                 # Send email if configured
                 if self.email_manager and self.config.email and self.config.email.enabled:
-                    self.console.print(f"📧 Sending {lang.upper()} email summary...")
+                    self.console.print(f"[EMAIL] Sending {lang.upper()} email summary...")
                     subscribers = self.storage.load_subscribers()
                     subject = f"Horizon Summary ({lang.upper()}) - {today}"
                     self.email_manager.send_daily_summary(summary, subject, subscribers)
@@ -316,7 +316,7 @@ class HorizonOrchestrator:
                         summarizer=summarizer,
                     )
 
-            self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
+            self.console.print("[bold green][OK] Horizon completed successfully![/bold green]")
             usage = get_usage_snapshot()
             if usage.total_tokens > 0:
                 self.console.print(
@@ -333,7 +333,7 @@ class HorizonOrchestrator:
                     )
 
         except Exception as e:
-            self.console.print(f"[bold red]❌ Error: {e}[/bold red]")
+            self.console.print(f"[bold red][ERROR] Error: {e}[/bold red]")
 
             # Send webhook failure notification if configured
             if self.webhook_notifier:
@@ -450,7 +450,7 @@ class HorizonOrchestrator:
         Returns:
             SourceFetchOutcome: Named fetch result and diagnostics
         """
-        self.console.print(f"🔍 Fetching from {name}...")
+        self.console.print(f"[FETCH] Fetching from {name}...")
         try:
             items = await scraper.fetch(since)
         except Exception as exc:
@@ -656,7 +656,7 @@ class HorizonOrchestrator:
 
         if log:
             self.console.print(
-                f"⭐️ {len(threshold_items)} items scored ≥ {effective_threshold}\n"
+                f"[SCORE]️ {len(threshold_items)} items scored ≥ {effective_threshold}\n"
             )
 
         deduped_items = threshold_items
@@ -835,7 +835,7 @@ class HorizonOrchestrator:
                         )
                 except Exception as exc:
                     self.console.print(
-                        f"   [yellow]⚠️  Reply fetch failed for {item.id}: {exc}[/yellow]"
+                        f"   [yellow][WARN]  Reply fetch failed for {item.id}: {exc}[/yellow]"
                     )
 
         if not expanded:
@@ -860,7 +860,7 @@ class HorizonOrchestrator:
         if not items:
             return
 
-        self.console.print("📚 Enriching with background knowledge...")
+        self.console.print("[ENRICH] Enriching with background knowledge...")
         ai_client = create_ai_client(self.config.ai)
         enricher = ContentEnricher(ai_client)
         await enricher.enrich_batch(items)
@@ -875,7 +875,7 @@ class HorizonOrchestrator:
         Returns:
             List[ContentItem]: Analyzed items
         """
-        self.console.print("🤖 Analyzing content with AI...")
+        self.console.print("[AI] Analyzing content with AI...")
 
         ai_client = create_ai_client(self.config.ai)
         analyzer = ContentAnalyzer(ai_client)
