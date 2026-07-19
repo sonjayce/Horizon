@@ -188,7 +188,7 @@ class HorizonOrchestrator:
         Args:
             force_hours: Optional override for time window in hours
         """
-        self.console.print("[bold cyan]🌅 Horizon - Starting aggregation...[/bold cyan]\n")
+        self.console.print("[bold cyan]=== Horizon - Starting aggregation...===[/bold cyan]\n")
 
         # Check email subscriptions if configured
         if (

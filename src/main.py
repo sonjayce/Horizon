@@ -77,10 +77,10 @@ def main():
         asyncio.run(orchestrator.run(force_hours=args.hours))
 
     except KeyboardInterrupt:
-        console.print("\n[yellow]⚠️  Interrupted by user[/yellow]")
+        console.print("\n[yellow]!!! Interrupted by user[/yellow]")
         sys.exit(0)
     except Exception as e:
-        console.print(f"\n[bold red]❌ Fatal error: {e}[/bold red]")
+        console.print(f"\n[bold red]!!! Fatal error: {e}[/bold red]")
         import traceback
         traceback.print_exc()
         sys.exit(1)
