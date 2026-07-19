@@ -53,7 +53,7 @@ def main():
         try:
             config = storage.load_config()
         except FileNotFoundError:
-            console.print("[bold red]❌ Configuration file not found![/bold red]\n")
+            console.print("[bold red][ERROR] Configuration file not found![/bold red]\n")
             data_dir_path = data_dir if isinstance(data_dir, Path) else Path(data_dir)
             example_path = data_dir_path / "config.example.json"
             if example_path.exists():
@@ -66,10 +66,10 @@ def main():
             )
             sys.exit(1)
         except ConfigError as e:
-            console.print(f"[bold red]❌ Error loading configuration: {e}[/bold red]")
+            console.print(f"[bold red][ERROR] Error loading configuration: {e}[/bold red]")
             sys.exit(1)
         except Exception as e:
-            console.print(f"[bold red]❌ Error loading configuration: {e}[/bold red]")
+            console.print(f"[bold red][ERROR] Error loading configuration: {e}[/bold red]")
             sys.exit(1)
 
         # Create and run orchestrator
