@@ -1,19 +1,22 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "deepseek",
-    "model": "deepseek-v4-flash",
-    "base_url": "https://api.deepseek.com",
-    "api_key_env": "DEEPSEEK_API_KEY",
+    "provider": "gemini",
+    "provider_chain": null,
+    "model": "gemini-2.0-flash",
+    "base_url": null,
+    "api_key_env": "GOOGLE_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,
-    "throttle_sec": 1,
+    "throttle_sec": 0.0,
+    "analysis_concurrency": 5,
+    "enrichment_concurrency": 5,
     "languages": [
       "zh",
       "en"
     ],
-    "analysis_concurrency": 5,
-    "enrichment_concurrency": 5
+    "azure_endpoint_env": null,
+    "api_version": null
   },
   "sources": {
     "github": [
@@ -160,7 +163,7 @@
     "imap_enabled": true,
     "imap_server": "imap.qq.com",
     "imap_port": 993,
-    "email_address": "3304408721@qq.com",
+    "email_address": "sonjayce@qq.com",
     "password_env": "EMAIL_PASSWORD",
     "sender_name": "Horizon Daily",
     "subscribe_keyword": "SUBSCRIBE",
