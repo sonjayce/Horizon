@@ -36,14 +36,6 @@
         "category": null
       },
       {
-        "type": "repo_releases",
-        "username": null,
-        "owner": "YD4223",
-        "repo": "https://github.com/YD4223/aihub",
-        "enabled": true,
-        "category": null
-      },
-      {
         "type": "user_events",
         "username": "karpathy",
         "owner": null,
@@ -398,17 +390,19 @@
     "twitter": null,
     "openbb": null,
     "ossinsight": {
-      "enabled": false,
-      "period": "past_24_hours",
+      "enabled": true,
+      "period": "past_7_days",
       "languages": [
         "All",
         "Python",
-        "TypeScript"
+        "TypeScript",
+        "Rust",
+        "Go"
       ],
       "keywords": [],
-      "min_stars": 5,
+      "min_stars": 10,
       "max_items": 30,
-      "category": null
+      "category": "oss-trending"
     },
     "gdelt": null,
     "google_news": null
