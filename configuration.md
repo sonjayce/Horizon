@@ -36,6 +36,7 @@ Common API key variable names:
 | Aliyun DashScope | `DASHSCOPE_API_KEY` |
 | Doubao | `DOUBAO_API_KEY` |
 | DeepSeek | `DEEPSEEK_API_KEY` |
+| StepFun | `STEPFUN_API_KEY` |
 
 **Anthropic Claude**:
 
@@ -170,6 +171,31 @@ For remote Ollama servers, set `ai.base_url` in `data/config.json` or set
 `HORIZON_OLLAMA_BASE_URL` in `.env`. `OLLAMA_BASE_URL` and `OLLAMA_HOST` are
 also recognized. If the value omits `/v1`, Horizon appends it automatically
 for Ollama's OpenAI-compatible endpoint.
+
+**StepFun** (Step AI):
+
+StepFun provides OpenAI-compatible API with additional reasoning capabilities.
+Set `STEPFUN_API_KEY` in your `.env` file.
+
+```json
+{
+  "ai": {
+    "provider": "stepfun",
+    "model": "step-3.7-flash",
+    "api_key_env": "STEPFUN_API_KEY",
+    "throttle_sec": 0
+  }
+}
+```
+
+Available models include:
+- `step-3.7-flash` - Fast and cost-effective (default)
+- `step-3.5-flash` - Previous generation fast model
+- `step-3.5-vision` - Vision-capable model
+- `step-2-16k` - Extended context model
+
+The base URL defaults to `https://api.stepfun.com/v1`. Override it with `base_url` if needed.
+StepFun's reasoning models return content in the `reasoning_content` field, which is handled automatically.
 
 ### AI throttling
 
