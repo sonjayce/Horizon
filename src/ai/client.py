@@ -33,6 +33,7 @@ _DEFAULT_API_KEY_ENVS = {
     AIProvider.DOUBAO: "DOUBAO_API_KEY",
     AIProvider.MINIMAX: "MINIMAX_API_KEY",
     AIProvider.DEEPSEEK: "DEEPSEEK_API_KEY",
+    AIProvider.STEPFUN: "STEPFUN_API_KEY",
 }
 
 
@@ -188,6 +189,12 @@ class OpenAIClient(AIClient):
     # Providers that need temperature clamped to (0, 1]
     _TEMP_CLAMP = {"minimax"}
 
+    # Providers that return content in reasoning field instead of content
+    _USE_REASONING_AS_CONTENT = {"stepfun"}
+
+    # Base URLs that use reasoning_content instead of content
+    _REASONING_BASE_URLS = {"https://api.stepfun.com/v1"}
+
     # Newer reasoning-series / GPT-5 family models reject legacy `max_tokens`
     # and require `max_completion_tokens` instead.
     _MODELS_REQUIRING_MAX_COMPLETION_TOKENS = ("o1", "o3", "o4", "gpt-5")
@@ -300,7 +307,22 @@ class OpenAIClient(AIClient):
                 input_tokens=getattr(usage, "prompt_tokens", 0),
                 output_tokens=getattr(usage, "completion_tokens", 0),
             )
-        return response.choices[0].message.content
+
+        # Extract content, handling providers that use reasoning field
+        message = response.choices[0].message
+        content = message.content
+
+        # If content is empty and provider uses reasoning_content field (e.g., StepFun),
+        # fall back to reasoning_content
+        if not content:
+            uses_reasoning = (
+                self.provider in self._USE_REASONING_AS_CONTENT
+                or self._resolve_base_url(self.config) in self._REASONING_BASE_URLS
+            )
+            if uses_reasoning and hasattr(message, "reasoning_content"):
+                content = message.reasoning_content
+
+        return content
 
     async def _do_request(
         self,
@@ -472,6 +494,81 @@ class AzureOpenAIClient(AIClient):
         return None
 
 
+class StepFunClient(AIClient):
+    """Client for StepFun models (step-3.7-flash, step-2-16k, etc.).
+
+    StepFun provides an OpenAI-compatible API but uses the reasoning_content
+    field for responses from its reasoning models. This client handles that
+    transparently.
+    """
+
+    def __init__(self, config: AIConfig):
+        """Initialize StepFun client.
+
+        Args:
+            config: AI configuration
+        """
+        self.config = config
+
+        api_key = _resolve_api_key(config)
+        base_url = config.base_url or "https://api.stepfun.com/v1"
+
+        kwargs = {"api_key": api_key, "base_url": base_url}
+        self.client = AsyncOpenAI(**kwargs)
+        self.model = config.model
+        self.temperature = config.temperature
+        self.max_tokens = config.max_tokens
+
+    async def complete(
+        self,
+        system: str,
+        user: str,
+        temperature: Optional[float] = None,
+        max_tokens: Optional[int] = None,
+    ) -> str:
+        """Generate completion using StepFun.
+
+        Args:
+            system: System prompt
+            user: User prompt
+            temperature: Sampling temperature
+            max_tokens: Maximum tokens to generate
+
+        Returns:
+            str: Generated text (from content or reasoning_content)
+        """
+        temperature = self.temperature if temperature is None else temperature
+        max_tokens = self.max_tokens if max_tokens is None else max_tokens
+
+        response = await self.client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+
+        usage = getattr(response, "usage", None)
+        if usage is not None:
+            record_usage(
+                "stepfun",
+                input_tokens=getattr(usage, "prompt_tokens", 0),
+                output_tokens=getattr(usage, "completion_tokens", 0),
+            )
+
+        # StepFun returns content in reasoning_content for reasoning models
+        message = response.choices[0].message
+        content = message.content
+
+        # Fall back to reasoning_content if content is empty
+        if not content and hasattr(message, "reasoning_content"):
+            content = message.reasoning_content
+
+        return content
+
+
 class GeminiClient(AIClient):
     """Client for Google Gemini models."""
 
@@ -547,6 +644,8 @@ def _create_single_client(config: AIConfig) -> AIClient:
         return AzureOpenAIClient(config)
     elif config.provider == AIProvider.GEMINI:
         return GeminiClient(config)
+    elif config.provider == AIProvider.STEPFUN:
+        return StepFunClient(config)
     elif config.provider in {
         AIProvider.OPENAI,
         AIProvider.ALI,

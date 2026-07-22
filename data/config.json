@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "deepseek",
+    "provider": "stepfun",
     "provider_chain": null,
-    "model": "deepseek-chat",
+    "model": "step-3.7-flash",
     "base_url": null,
-    "api_key_env": "DEEPSEEK_API_KEY",
+    "api_key_env": "STEPFUN_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 0.0,

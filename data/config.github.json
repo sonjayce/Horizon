@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "openai",
+    "provider": "stepfun",
     "provider_chain": null,
     "model": "step-3.7-flash",
-    "base_url": "https://api.stepfun.com/v1",
+    "base_url": null,
     "api_key_env": "STEPFUN_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,

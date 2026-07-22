@@ -75,6 +75,7 @@ class AIProvider(str, Enum):
     DOUBAO = "doubao"
     MINIMAX = "minimax"
     DEEPSEEK = "deepseek"
+    STEPFUN = "stepfun"
     OLLAMA = "ollama"
 
 
@@ -121,6 +122,11 @@ AI_PROVIDER_DEFAULTS = {
         "model": "deepseek-chat",
         "api_key_env": "DEEPSEEK_API_KEY",
         "base_url": "https://api.deepseek.com",
+    },
+    AIProvider.STEPFUN: {
+        "model": "step-3.7-flash",
+        "api_key_env": "STEPFUN_API_KEY",
+        "base_url": "https://api.stepfun.com/v1",
     },
     AIProvider.OLLAMA: {
         "model": "llama3.1",
