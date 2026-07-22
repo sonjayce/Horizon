@@ -2,6 +2,7 @@
 
 import argparse
 import asyncio
+import os
 import sys
 from pathlib import Path
 
@@ -42,6 +43,20 @@ def main():
     try:
         # Load environment variables from .env file
         load_dotenv()
+
+        # Debug: print API key status
+        import sys
+        print(f"[DEBUG] DEEPSEEK_API_KEY: {os.getenv('DEEPSEEK_API_KEY', 'NOT SET')[:20]}...", file=sys.stderr)
+        print(f"[DEBUG] STEPFUN_API_KEY: {os.getenv('STEPFUN_API_KEY', 'NOT SET')[:20]}...", file=sys.stderr)
+
+        # Clear proxy environment variables to prevent httpx from using system proxies
+        # Users who need proxy should configure it explicitly in the code
+        os.environ.pop("HTTP_PROXY", None)
+        os.environ.pop("HTTPS_PROXY", None)
+        os.environ.pop("ALL_PROXY", None)
+        os.environ.pop("http_proxy", None)
+        os.environ.pop("https_proxy", None)
+        os.environ.pop("all_proxy", None)
 
         # Ensure we're in the project directory or use data/ in current dir
         data_dir = Path("data")

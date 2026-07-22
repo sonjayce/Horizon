@@ -470,7 +470,7 @@ class HorizonOrchestrator:
             sub_counts[self._sub_source_label(item)] += 1
         if len(sub_counts) > 1:
             for sub, count in sorted(sub_counts.items()):
-                self.console.print(f"      • {sub}: {count}")
+                self.console.print(f"      - {sub}: {count}")
 
         return SourceFetchOutcome(
             source_name=name,
@@ -656,7 +656,7 @@ class HorizonOrchestrator:
 
         if log:
             self.console.print(
-                f"[SCORE]️ {len(threshold_items)} items scored ≥ {effective_threshold}\n"
+                f"[SCORE] {len(threshold_items)} items scored >= {effective_threshold}\n"
             )
 
         deduped_items = threshold_items

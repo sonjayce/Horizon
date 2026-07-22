@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "openai",
-    "provider_chain": "deepseek",
-    "model": "step-3.7-flash",
-    "base_url": "https://api.stepfun.com/v1",
-    "api_key_env": "STEPFUN_API_KEY",
+    "provider": "deepseek",
+    "provider_chain": null,
+    "model": "deepseek-chat",
+    "base_url": null,
+    "api_key_env": "DEEPSEEK_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 0.0,
@@ -275,6 +275,13 @@
         "enabled": true,
         "category": "",
         "content_extractor": null
+      },
+      {
+        "name": "GitHub Trending - Daily",
+        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "enabled": true,
+        "category": "github-trending",
+        "content_extractor": null
       }
     ],
     "reddit": {
@@ -408,7 +415,7 @@
     "google_news": null
   },
   "filtering": {
-    "ai_score_threshold": 7.0,
+    "ai_score_threshold": 6.0,
     "time_window_hours": 24,
     "max_items": null,
     "category_groups": {},

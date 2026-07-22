@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "gemini",
+    "provider": "openai",
     "provider_chain": null,
-    "model": "gemini-2.0-flash",
-    "base_url": null,
-    "api_key_env": "GOOGLE_API_KEY",
+    "model": "step-3.7-flash",
+    "base_url": "https://api.stepfun.com/v1",
+    "api_key_env": "STEPFUN_API_KEY",
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 0.0,
@@ -107,10 +107,27 @@
           "fetch_limit": 20
         }
       ]
-    }
+    },
+    "ossinsight": {
+      "enabled": true,
+      "period": "past_7_days",
+      "languages": [
+        "All",
+        "Python",
+        "TypeScript",
+        "Rust",
+        "Go"
+      ],
+      "keywords": [],
+      "min_stars": 10,
+      "max_items": 30,
+      "category": "oss-trending"
+    },
+    "gdelt": null,
+    "google_news": null
   },
   "filtering": {
-    "ai_score_threshold": 8.0,
+    "ai_score_threshold": 6.0,
     "time_window_hours": 24
   },
   "webhook": {

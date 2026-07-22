@@ -1,5 +1,6 @@
 """RSS feed scraper implementation."""
 
+import asyncio
 import calendar
 import hashlib
 import logging
@@ -48,18 +49,19 @@ class RSSScraper(BaseScraper):
         """
         items = []
         sources = self.config["sources"]
+        timeout = httpx.Timeout(20.0, connect=10.0)  # Per-feed timeout
 
         for source in sources:
             if not source.enabled:
                 continue
 
-            feed_items = await self._fetch_feed(source, since)
+            feed_items = await self._fetch_feed(source, since, timeout)
             items.extend(feed_items)
 
         return items
 
     async def _fetch_feed(
-        self, source: RSSSourceConfig, since: datetime
+        self, source: RSSSourceConfig, since: datetime, timeout: httpx.Timeout = None
     ) -> List[ContentItem]:
         """Fetch items from a single RSS feed.
 
@@ -80,9 +82,20 @@ class RSSScraper(BaseScraper):
                 str(source.url),
             )
 
-            # Fetch feed content
-            response = await self.client.get(feed_url, follow_redirects=True)
-            response.raise_for_status()
+            # Fetch feed content with per-feed timeout
+            req_timeout = timeout or httpx.Timeout(20.0, connect=5.0, read=10.0)
+            try:
+                response = await asyncio.wait_for(
+                    self.client.get(feed_url, follow_redirects=True, timeout=req_timeout),
+                    timeout=15.0
+                )
+                response.raise_for_status()
+            except asyncio.TimeoutError:
+                logger.warning("Timeout fetching RSS feed %s: %s", source.name, feed_url)
+                return []
+            except Exception as e:
+                logger.warning("Error fetching RSS feed %s: %s", source.name, e)
+                return []
 
             # Parse feed
             feed = feedparser.parse(response.text)
@@ -90,7 +103,18 @@ class RSSScraper(BaseScraper):
             for entry in feed.entries:
                 # Parse published date
                 published_at = self._parse_date(entry)
-                if not published_at or published_at < since:
+                if not published_at:
+                    continue
+
+                # Ensure both datetimes are timezone-aware for comparison
+                if published_at.tzinfo is None:
+                    published_at = published_at.replace(tzinfo=timezone.utc)
+                if since.tzinfo is None:
+                    since_aware = since.replace(tzinfo=timezone.utc)
+                else:
+                    since_aware = since
+
+                if published_at < since_aware:
                     continue
 
                 # Generate unique ID from feed URL and entry ID
@@ -142,7 +166,7 @@ class RSSScraper(BaseScraper):
             entry: Feed entry data
 
         Returns:
-            datetime: Parsed publication date or None
+            datetime: Parsed publication date or None (always timezone-aware)
         """
         # Try different date fields
         for field in ["published", "updated", "created"]:
@@ -155,7 +179,11 @@ class RSSScraper(BaseScraper):
                         )
                     # Fallback to string parsing
                     date_str = entry[field]
-                    return parsedate_to_datetime(date_str)
+                    dt = parsedate_to_datetime(date_str)
+                    # Ensure timezone-aware
+                    if dt.tzinfo is None:
+                        dt = dt.replace(tzinfo=timezone.utc)
+                    return dt
                 except Exception:
                     continue
 
