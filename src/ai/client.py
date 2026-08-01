@@ -169,6 +169,10 @@ class AnthropicClient(AIClient):
                 input_tokens=getattr(usage, "input_tokens", 0),
                 output_tokens=getattr(usage, "output_tokens", 0),
             )
+        # Handle content blocks — skip ThinkingBlock, find the TextBlock
+        for block in message.content:
+            if hasattr(block, "text"):
+                return block.text
         return message.content[0].text
 
 
