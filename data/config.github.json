@@ -173,7 +173,7 @@
     "headers": ""
   },
   "email": {
-    "enabled": true,
+    "enabled": false,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
     "smtp_username": null,
